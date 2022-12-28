@@ -14,11 +14,12 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_6o0okao",
+        "template_2samtpe",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "0mQjlpXq53RG2CR-q"
       )
+      e.target.reset()
       .then(
         (result) => {
           console.log(result.text);
@@ -57,7 +58,7 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTION */}
-        <form ref={form} onS>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
