@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <a href="#" className="footer_logo"></a>
 
-      <ul>
+      <ul className="permalinks">
         <li>
           <a href="#">Home</a>
         </li>
